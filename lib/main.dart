@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app_ahmad_tamer/ui/screens/home/islamiHomeScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,7 +9,14 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return 
+      MaterialApp(
+        routes: {
+          IslamiHomeScreen.routename:(_)=> IslamiHomeScreen(),
+
+        },
+        initialRoute: IslamiHomeScreen.routename,
+      );
   }
 }
 
