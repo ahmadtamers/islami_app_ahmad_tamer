@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app_ahmad_tamer/ui/screens/View_SuraOrHadeeth/viewSuraOrHadeeth.dart';
 import 'package:islami_app_ahmad_tamer/ui/utilities/islamiAppColors.dart';
 import 'package:islami_app_ahmad_tamer/ui/utilities/islamiAppIcons.dart';
 import 'package:islami_app_ahmad_tamer/ui/utilities/islamiAppTheme.dart';
@@ -34,7 +35,9 @@ class Quran_tab extends StatelessWidget {
                       itemBuilder: (_,index){
                         return 
                           TextButton(
-                            onPressed: (){},
+                            onPressed: (){
+                              Navigator.pushNamed(context,ViewSuraOrHadeeth.routname)
+                            },
                             child: Text(IslamiConstants.Suraname[index],textAlign: TextAlign.center,style: IslamiAppTheme.islamiQuraTabSuraName.copyWith(color: IslamiAppColors.accent),)
                           );
                       }),

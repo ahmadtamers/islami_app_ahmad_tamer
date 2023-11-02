@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app_ahmad_tamer/ui/screens/View_SuraOrHadeeth/viewSuraOrHadeeth.dart';
 import 'package:islami_app_ahmad_tamer/ui/screens/home/islamiHomeScreen.dart';
 
 void main() {
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
       MaterialApp(
         routes: {
           IslamiHomeScreen.routename:(_)=> IslamiHomeScreen(),
+          ViewSuraOrHadeeth.routname:(_)=> ViewSuraOrHadeeth(),
 
         },
         initialRoute: IslamiHomeScreen.routename,
